@@ -7,7 +7,7 @@
 # https://github.com/P3TERX/Actions-OpenWrt
 # Description: Build OpenWrt using GitHub Actions
 #
-name: r3 Build OpenWrt
+name: r3g Build OpenWrt
 
 on:
   repository_dispatch:

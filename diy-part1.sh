@@ -18,6 +18,7 @@
 
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+sed -i 's/PATCHVER:=5.10/PATCHVER:=5.4/g' target/linux/ramips/Makefile
 
 #git clone https://github.com/brvphoenix/wrtbwmon package/wrtbwmon
 #git clone https://github.com/brvphoenix/luci-app-wrtbwmon package/luci-app-wrtbwmon

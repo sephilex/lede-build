@@ -20,5 +20,10 @@ sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 # sed -i 's/PATCHVER:=5.4/PATCHVER:=5.10/g' target/linux/ramips/Makefile
 
+cd package/lean  
+rm -rf luci-theme-argon  
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  
+make menuconfig #choose LUCI->Theme->Luci-theme-argon 
+
 #git clone https://github.com/brvphoenix/wrtbwmon package/wrtbwmon
 #git clone https://github.com/brvphoenix/luci-app-wrtbwmon package/luci-app-wrtbwmon
